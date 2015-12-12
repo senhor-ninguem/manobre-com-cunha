@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Manobre com o Cunha</title>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Manobre com o Cunha" />
+    <meta property="og:url" content="https://senhor-ninguem.github.io/manobre-com-cunha/#!" />
+    <meta property="og:image" content="https://senhor-ninguem.github.io/manobre-com-cunha/estado/1.png" />
+    <meta property="og:description"
+          content="Faça que nem o Cunha manobrando no congresso nacional!
+          Quanto melhores suas manobras dentro pista mais o Manomometro sobe." />
+
+
+
+		<link href="racer.css" rel="stylesheet">
+		<link href="thermometer.css" rel="stylesheet">
+		<link href="modal.css" rel="stylesheet">
+		<link href="custom.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				background: #fff;
+			}
+			canvas {
+				display: block;
+				border: solid 5px #444;
+				margin: 0 auto;
+			}
+			#info {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+    <div class="score">
+      <span id="timer">10</span>
+    </div>
+    <span class="thermometer"></span>
+    <img src="estado/1.png" class="state init" />
+		<canvas id="canvas" width="1000" height="700"></canvas>
+    <div id="info">
+      Player: x <span id="px">0</span> y <span id="py"></span>
+    </div>
+
+    <section class="modal--show" id="modal" tabindex="-1"
+             role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+      <div class="modal-inner">
+        <header id="modal-label">
+          Manobre com o Cunha!
+        </header>
+        <div class="modal-content">
+          <!-- The modals content -->
+          Faça que nem o Cunha manobrando no congresso nacional!
+          <br/>
+          Quanto melhores suas manobras dentro pista mais o <strong>Manomometro</strong>
+          sobe.
+          <h1>Como jogar:</h1>
+          <ul>
+            <li>Use a tecla pra cima para acelerar</li>
+            <li>Use os teclas direcionais do seu teclado para manobrar o cunha.</li>
+            <li>Use a tecla pra baixo para desacelerar</li>
+          </ul>
+          <h1>Objetivo</h1>
+          Se mantenha dentro da pista manobrando e acelarando para fazer o Manomometro subir
+          voce tem dez segundos para manobrar o Congresso Nacional.
+          <br/>
+        </div>
+        <footer>
+          <a href="#" class="start">Começar!</a>
+        </footer>
+      </div>
+
+      <a href="#!"
+         class="modal-close"
+         title="Close this modal"
+         data-close="Close"
+         data-dismiss="modal">?</a>
+    </section>
+
+    <section class="modal--show" id="modal-finish" tabindex="-1"
+             role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+      <div class="modal-inner">
+        <header id="modal-label">
+          Manobre com o Cunha!
+        </header>
+        <div class="modal-content">
+          <section id="range-one" class="range">
+              <img src="estado/1.png" />
+              <p>
+Você precisa manobrar mais. Não conseguiu o suficiente para impedir a votação da sua cassação no Conselho de Ética por ser investigado na Operação Lava Jato.
+              </p>
+          </section>
+          <section id="range-two"class="range">
+              <img src="estado/2.png" />
+              <p>
+Quase conseguiu. Você adiou sete vezes a votação de sua cassação, aceitou o pedido de impeachment, mas nem todo mundo esqueceu que você é corrupto.
+              </p>
+          </section>
+          <section id="range-three"class="range">
+              <img src="estado/3.png" />
+              <p>
+Que manobra boa! Agora talvez você consiga articular um golpe antes de ir para a cadeia devido as contas na Suíça.
+              </p>
+          </section>
+          <section>
+            <h1>Compartilhe</h1>
+            <ul class="share-buttons">
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsenhor-ninguem.github.io%2Fmanobre-com-cunha&t=Manobre%20Com%20o%20Cunha" title="Share on Facebook" target="_blank"><img src="images/flat_web_icon_set/black/Facebook.png"></a></li>
+              <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fsenhor-ninguem.github.io%2Fmanobre-com-cunha&text=Manobre%20Com%20o%20Cunha:%20https%3A%2F%2Fsenhor-ninguem.github.io%2Fmanobre-com-cunha" target="_blank" title="Tweet"><img src="images/flat_web_icon_set/black/Twitter.png"></a></li>
+            </ul>
+          </section>
+        </div>
+        <footer>
+          <a href="#" class="re-start">
+            Tentar novamente
+          </a>
+        </footer>
+      </div>
+
+      <a href="#!"
+         class="modal-close"
+         title="Close this modal"
+         data-close="Close"
+         data-dismiss="modal">?</a>
+    </section>
+
+
+		<script src="jquery.js"></script>
+		<script src="countdown.js"></script>
+		<script src="score.js"></script>
+		<script src="helpers.js"></script>
+		<script src="collision.js"></script>
+		<script src="car.js"></script>
+		<script src="racer.js"></script>
+    <script type="text/javascript">
+      window.location.hash = 'modal';
+    </script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+#modal-label {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.modal-content {
+  font-size: 1.5em;
+}
+
+
+img.state {
+  position: absolute;
+}
+
+
+h1 {
+  margin: 10px 0px;
+}
+
+.range {
+  display: none;
+}
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}

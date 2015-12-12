@@ -1,0 +1,21 @@
+span {
+  color: black;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+span.manobras {
+  float: right;
+  color: blue;
+}
+
+span.nao-manobras {
+  float: left;
+  color: red;
+}
+
+.score {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
